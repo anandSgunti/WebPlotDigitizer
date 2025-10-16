@@ -4,8 +4,10 @@
     "description": "WebPlotDigitizer",
     "main": "wpd.min.js",
     "scripts": {
+        "dev": "vite",
         "prebuild": "./build.sh",
-        "build": "uglifyjs combined.js -cm -o wpd.min.js",
+        "build": "uglifyjs combined.js -cm -o wpd.min.js && vite build",
+        "preview": "vite preview",
         "format": "./format.sh",
         "test": "./node_modules/karma/bin/karma start",
         "start": "http-server -o"
