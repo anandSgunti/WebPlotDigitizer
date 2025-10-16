@@ -5,3 +5,4 @@ combined.js
 wpd.min.js
 wpd_node.js
 experiments
+.env
